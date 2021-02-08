@@ -13,7 +13,7 @@ app.use(express.static(__dirname + "/public"));
 app.set("view engine", "ejs");
 
 app.get("/", (request, response) => {
-  response.render("index", {});
+  response.render("tic-tac-toe", {});
 });
 
 app.listen(PORT, () => {
